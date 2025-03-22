@@ -1,0 +1,7 @@
+[submodule "antof-traffic-server"]
+    path = server
+    url = git@github.com:richardhapb/antof-traffic-server.git
+
+[submodule "antof-traffic-client"]
+    path = client
+    url = git@github.com:richardhapb/antof-traffic-client.git
