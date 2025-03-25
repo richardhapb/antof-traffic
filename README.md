@@ -2,6 +2,8 @@
 
 This is a Data-oriented project with the objective to provide a powerful tool for getting insights from traffic data in Antofagasta using the `Waze` API through its program `cities`, which provides currently active `Alerts` and `Jams`.
 
+Page is available in [https://traficoantofagasta.com](https://traficoantofagasta.com)
+
 ## Main concepts
 
 The data is provided in `JSON` format from the API and contains `Alerts` and `Jams` events. `Alerts` represent all events reported by users and `Jams` are traffic congestion events that `Waze` calculates from average speed, quantity of vehicles, etc. This application is centered on `Alerts` events because they include both jams and user-reported alerts, and additionally provide more information, such as `ACCIDENT` or `ROAD_CLOSED` types. The complete information is available in [Waze documentation](https://support.google.com/waze/partners/answer/13458165?hl=en&ref_topic=10616686&sjid=16379543544211503448-SA).
