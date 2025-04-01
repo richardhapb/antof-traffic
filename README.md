@@ -30,11 +30,13 @@ The local server, written in Rust, is in charge of all core processes related to
 ```text
 http://localhost:7000/update-data
 http://localhost:7000/get-data?since={millis_epoch_time}&until={millis_epoch_time}
+http://localhost:7000/clear-cache?key={key}
 http://localhost:7000/aggregate
 ```
 
 - `update-data`: `GET` - endpoint retrieves data from the API, transforms it, saves to database and cache. Then returns the retrieved and transformed data in the `HTTP` response.
 - `get-data`: `GET` - endpoint that provides data from cache if available or from the database, with parameters `since` and `until` which indicate the period of `pub_millis` (publication date) in epoch time and milliseconds.
+- `clear-cache`: `GET` - endpoint that removes data from a key in cache.
 - `aggregate`: `POST` - endpoint for transforming data from native API form to aggregated and transformed data. The request body should contain the alert data in a `JSON` with the key `alerts` containing a list of all the correct `alerts` data.
 
 
