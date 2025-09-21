@@ -1,0 +1,5 @@
+.DS_Store
+waze.dump
+config.py
+route*.txt
+thesis
